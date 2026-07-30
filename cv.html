@@ -1,0 +1,486 @@
+<title>Mokhamad Rofiudin — CV</title>
+<style>
+  :root {
+    --bg: #f4f5f3;
+    --bg-raised: #ffffff;
+    --ink: #171b1d;
+    --ink-soft: #4b5459;
+    --ink-faint: #767f83;
+    --line: #d8dcda;
+    --accent: #b0691c;
+    --accent-strong: #7a480f;
+    --ok: #2f6a5c;
+    --tag-bg: rgba(176, 105, 28, 0.1);
+    --ok-bg: rgba(47, 106, 92, 0.1);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161a;
+      --bg-raised: #171c21;
+      --ink: #e7e9e7;
+      --ink-soft: #a7aeb0;
+      --ink-faint: #7c8588;
+      --line: #2a3136;
+      --accent: #e5a24c;
+      --accent-strong: #f0be7c;
+      --ok: #6fbfa8;
+      --tag-bg: rgba(229, 162, 76, 0.13);
+      --ok-bg: rgba(111, 191, 168, 0.13);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12161a;
+    --bg-raised: #171c21;
+    --ink: #e7e9e7;
+    --ink-soft: #a7aeb0;
+    --ink-faint: #7c8588;
+    --line: #2a3136;
+    --accent: #e5a24c;
+    --accent-strong: #f0be7c;
+    --ok: #6fbfa8;
+    --tag-bg: rgba(229, 162, 76, 0.13);
+    --ok-bg: rgba(111, 191, 168, 0.13);
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f5f3;
+    --bg-raised: #ffffff;
+    --ink: #171b1d;
+    --ink-soft: #4b5459;
+    --ink-faint: #767f83;
+    --line: #d8dcda;
+    --accent: #b0691c;
+    --accent-strong: #7a480f;
+    --ok: #2f6a5c;
+    --tag-bg: rgba(176, 105, 28, 0.1);
+    --ok-bg: rgba(47, 106, 92, 0.1);
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Optima, Candara, "Segoe UI", Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent-strong); text-decoration-color: var(--line); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .sheet {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3.5rem 1.75rem 5rem;
+  }
+
+  h1, h2, h3 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    text-wrap: balance;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .mono {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  }
+
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- Header ---------- */
+  header.identity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 2.5rem;
+  }
+  header.identity h1 {
+    font-size: clamp(2.1rem, 5vw, 2.9rem);
+    line-height: 1.05;
+  }
+  .role-line {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+  }
+  .role-line .sep { color: var(--line); margin: 0 0.5em; }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+  .contact-row a { color: var(--ink-soft); }
+  .contact-row a:hover { color: var(--accent-strong); }
+
+  /* ---------- Layout ---------- */
+  .layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  @media (max-width: 760px) {
+    .layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    position: sticky;
+    top: 2rem;
+  }
+  @media (max-width: 760px) {
+    aside { position: static; order: 2; }
+    main { order: 1; }
+  }
+
+  aside section h2, main section > h2 {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-strong);
+    margin-bottom: 0.85rem;
+  }
+
+  .summary {
+    color: var(--ink-soft);
+    font-size: 0.97rem;
+  }
+  .summary p { margin: 0 0 0.9rem; }
+  .summary p:last-child { margin-bottom: 0; }
+
+  .skill-group { margin-bottom: 1.1rem; }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-group .label {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    margin-bottom: 0.4rem;
+  }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .chip {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 0.74rem;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  .edu-item { margin-bottom: 0.9rem; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-item .school { font-weight: 600; font-size: 0.92rem; }
+  .edu-item .detail { font-size: 0.83rem; color: var(--ink-soft); }
+  .edu-item .when { font-size: 0.78rem; color: var(--ink-faint); }
+
+  .lang-row { display: flex; justify-content: space-between; font-size: 0.88rem; color: var(--ink-soft); padding: 0.2rem 0; }
+  .lang-row .level { color: var(--ink-faint); font-size: 0.8rem; }
+
+  /* ---------- Experience ---------- */
+  main section { margin-bottom: 3rem; }
+  main section:last-child { margin-bottom: 0; }
+
+  .role {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .role:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .role-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.15rem;
+  }
+  .role-head h3 { font-size: 1.25rem; }
+  .role-when {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+  .role-where { font-size: 0.88rem; color: var(--ink-faint); margin-bottom: 0.9rem; }
+  .role-blurb { color: var(--ink-soft); font-size: 0.94rem; margin: 0 0 0.9rem; }
+
+  ul.log { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
+  ul.log li {
+    position: relative;
+    padding-left: 1.05rem;
+    font-size: 0.94rem;
+    color: var(--ink-soft);
+  }
+  ul.log li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+  }
+  ul.log li strong { color: var(--ink); font-weight: 600; }
+
+  .tag {
+    display: inline-block;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    padding: 0.05rem 0.4rem;
+    margin-right: 0.5rem;
+    vertical-align: 1px;
+    background: var(--tag-bg);
+    color: var(--accent-strong);
+    white-space: nowrap;
+  }
+  .tag.ok { background: var(--ok-bg); color: var(--ok); }
+
+  /* ---------- Projects ---------- */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem 1.5rem;
+  }
+  .project {
+    border-top: 1px solid var(--line);
+    padding-top: 0.7rem;
+  }
+  .project .name a { font-weight: 600; color: var(--ink); font-size: 0.98rem; }
+  .project .name a:hover { color: var(--accent-strong); }
+  .project .desc { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.25rem; }
+  .project .meta { font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace; font-size: 0.72rem; color: var(--ink-faint); margin-top: 0.4rem; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media print {
+    @page { margin: 14mm 12mm; }
+    body { background: #fff; color: #000; font-size: 12px; }
+    .sheet { padding: 0; max-width: none; }
+    .layout { grid-template-columns: 210px 1fr; justify-content: start; }
+    aside { position: static; order: 0; }
+    main { order: 0; }
+    .role, .project, .skill-group, .edu-item, ul.log li { break-inside: avoid; }
+    a { color: #000; text-decoration: none; }
+    .tag { border: 1px solid #999; background: none; color: #000; }
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="identity">
+    <div class="eyebrow">Curriculum Vitae</div>
+    <h1>Mokhamad Rofiudin</h1>
+    <div class="role-line">DevOps Engineer<span class="sep">&middot;</span>Platform Engineer</div>
+    <div class="contact-row">
+      <span>Tulungagung, East Java, Indonesia</span>
+      <a href="mailto:mokh.rofiudin@gmail.com">mokh.rofiudin@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mokhamadrofiudin" target="_blank" rel="noopener">linkedin.com/in/mokhamadrofiudin</a>
+      <a href="https://github.com/mrofi" target="_blank" rel="noopener">github.com/mrofi</a>
+      <a href="https://mokh.rofiudin.my.id" target="_blank" rel="noopener">mokh.rofiudin.my.id</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <section>
+        <h2>Summary</h2>
+        <div class="summary">
+          <p>Started as an IT generalist at a hospital &mdash; VB6, hardware, teaching users to fix their own problems. No CS degree. 7.5 years as a PHP backend developer building real products in Jakarta.</p>
+          <p>In 2023, pivoted deliberately into DevOps &mdash; wanting to understand the infrastructure things run on, not just what runs on it. 14 years of figuring things out in production.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skill-group">
+          <div class="label">Platform &amp; Orchestration</div>
+          <div class="chip-row">
+            <span class="chip">Kubernetes</span><span class="chip">GKE</span><span class="chip">Helm</span><span class="chip">ArgoCD</span><span class="chip">KEDA</span><span class="chip">Docker</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Observability</div>
+          <div class="chip-row">
+            <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Loki</span><span class="chip">Alertmanager</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Data &amp; Messaging</div>
+          <div class="chip-row">
+            <span class="chip">Kafka</span><span class="chip">RabbitMQ</span><span class="chip">Cassandra</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Databases</div>
+          <div class="chip-row">
+            <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MariaDB</span><span class="chip">Cloud SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Cloud &amp; Security</div>
+          <div class="chip-row">
+            <span class="chip">GCP</span><span class="chip">IAM</span><span class="chip">IAP / bastion hardening</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Workflow &amp; Data Tooling</div>
+          <div class="chip-row">
+            <span class="chip">Airflow</span><span class="chip">Spark</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="label">Languages &amp; CI/CD</div>
+          <div class="chip-row">
+            <span class="chip">Go</span><span class="chip">TypeScript</span><span class="chip">PHP</span><span class="chip">Azure Pipelines</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="edu-item">
+          <div class="school">STMIK Widya Pratama Pekalongan</div>
+          <div class="detail">Management Information Systems &amp; Services (not completed)</div>
+          <div class="when">2010 &ndash; 2015</div>
+        </div>
+        <div class="edu-item">
+          <div class="school">SMA Negeri 1 Pekalongan</div>
+          <div class="when">2004 &ndash; 2006</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <div class="lang-row"><span>Indonesian</span><span class="level">native</span></div>
+        <div class="lang-row"><span>English</span><span class="level">limited working</span></div>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Experience</h2>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Kata.ai &mdash; DevOps Engineer</h3>
+            <span class="role-when">May 2023 &ndash; Present</span>
+          </div>
+          <div class="role-where">Jakarta, Indonesia</div>
+          <p class="role-blurb">Own site reliability engineering (SRE), platform operations, and backend development for a multi-tenant conversational AI platform running on GKE &mdash; on-call, postmortems, and infrastructure hardening, alongside building and maintaining the Go services that run on it.</p>
+          <ul class="log">
+            <li><span class="tag ok">RESOLVED</span>Diagnosed a production chatbot response-delay incident caused by a large broadcast overwhelming reactive autoscaling; designed and shipped a <strong>KEDA pre-scaling strategy</strong> (combined CPU + scheduled triggers) that scaled the affected worker to 90 replicas ahead of each broadcast window with zero pending pods. While validating it, found and fixed an unrelated crash-loop on a neighboring service caused by a blocking health-check pattern &mdash; resolved by redesigning the liveness/readiness probe split, then safely cycled roughly 140 deployments cluster-wide to clear the resulting connection storm.</li>
+            <li><span class="tag">5 WHYS</span>Led a 5 Whys investigation into a P1 cluster-wide worker node outage, uncovering three independently compounding failures &mdash; a silently broken CNI plugin from a deprecated upstream image registry, CPU starvation from a security agent lacking container-aware exclusions, and unbounded log growth on end-of-life Kubernetes/Docker versions &mdash; and delivered both immediate fixes and a long-term upgrade roadmap.</li>
+            <li><span class="tag">HARDENING</span>Designed and personally verified an end-to-end <strong>security hardening reference implementation</strong> (private-only encrypted Cloud SQL, functional account lockout tested via real login attempts, immutable/locked backups verified via real deletion attempts, hardened bastion access via IAP + OS Login + least-privilege service accounts) to prove a client's regulatory compliance controls were technically achievable ahead of a production-wide rollout.</li>
+            <li><span class="tag">MIGRATION</span>Authored the migration plan and led execution of a production <strong>Kafka</strong> cluster migration from ZooKeeper-based coordination to KRaft consensus mode.</li>
+            <li>Created and scaffolded new services from the ground up &mdash; git setup, Helm chart, CI/CD pipeline, and ArgoCD GitOps registration &mdash; and served as an individual contributor across 25+ service repositories on the platform.</li>
+            <li><span class="tag">BUILT</span>Personally designed and built several <strong>Go backend services</strong> now running in production, including payment gateway middleware connecting the chatbot platform to telco billing systems across multiple client accounts (push-to-pay, top-ups, refunds, WhatsApp payment reminders), and a CRM conversation adapter integrating the chat channel with a third-party live-chat API.</li>
+            <li>Operate workloads spanning Airflow, Spark, and cert-manager; maintain CI/CD pipelines (Azure Pipelines) and GitOps deployments (ArgoCD, Helm); produce RCA documentation across databases, messaging systems, and orchestration tooling.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Suitmedia &mdash; Software Engineer</h3>
+            <span class="role-when">Dec 2015 &ndash; May 2023</span>
+          </div>
+          <div class="role-where">Jakarta Selatan, Indonesia &middot; 7.5 years</div>
+          <ul class="log">
+            <li>Built and maintained PHP-based web products for clients, translating requirements into working software under real deadlines.</li>
+            <li>Delivered a <strong>ride-sharing platform</strong>, a <strong>job-matching application</strong> with a custom matching algorithm, and an <strong>e-commerce platform</strong> with cart, payments, vouchers, and referrals.</li>
+            <li>Advised on technical solutions across other projects beyond direct ownership.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Jaya Institute Indonesia &mdash; IT Consultant</h3>
+            <span class="role-when">Jan 2011 &ndash; Oct 2015</span>
+          </div>
+          <div class="role-where">Pekalongan, Central Java, Indonesia</div>
+          <ul class="log">
+            <li>Advised local clients on software, websites, design, promotion, and general computer literacy.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>RS QIM &mdash; IT Staff</h3>
+            <span class="role-when">Aug 2011 &ndash; Feb 2014</span>
+          </div>
+          <div class="role-where">Pekalongan, Central Java, Indonesia</div>
+          <ul class="log">
+            <li>Built internal applications in Visual Basic 6; handled hardware and software troubleshooting.</li>
+            <li>Trained end users to independently resolve recurring issues.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Selected Personal Projects</h2>
+        <div class="project-grid">
+          <div class="project">
+            <div class="name"><a href="https://github.com/mrofi/edge-proxy" target="_blank" rel="noopener">edge-proxy</a></div>
+            <div class="desc">Lightweight edge proxy service.</div>
+            <div class="meta">TypeScript</div>
+          </div>
+          <div class="project">
+            <div class="name"><a href="https://github.com/mrofi/simple-golang-kv" target="_blank" rel="noopener">simple-golang-kv</a></div>
+            <div class="desc">A simple key-value store built with the Echo framework and etcd.</div>
+            <div class="meta">Go</div>
+          </div>
+          <div class="project">
+            <div class="name"><a href="https://github.com/mrofi/bashscript-server" target="_blank" rel="noopener">bashscript-server</a></div>
+            <div class="desc">Lightweight HTTP server for serving and running bash scripts remotely; built as a base Docker image.</div>
+            <div class="meta">Go</div>
+          </div>
+          <div class="project">
+            <div class="name"><a href="https://github.com/roketid/windmill-dashboard-nextjs-typescript" target="_blank" rel="noopener">windmill-dashboard-nextjs-typescript</a></div>
+            <div class="desc">Next.js admin dashboard UI.</div>
+            <div class="meta">TypeScript &middot; 263 stars</div>
+          </div>
+          <div class="project">
+            <div class="name"><a href="https://github.com/mrofi/caddy-html-server-dockerfile" target="_blank" rel="noopener">caddy-html-server-dockerfile</a></div>
+            <div class="desc">Minimal Caddy-based static HTML server, used as a Docker base image.</div>
+            <div class="meta">Dockerfile</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <span>github.com/mrofi &middot; 100+ public repositories</span>
+    <span class="mono">Last updated 2026-07-30</span>
+  </footer>
+</div>

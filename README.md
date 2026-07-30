@@ -17,3 +17,5 @@ No CS degree, no bootcamp — 14 years of figuring things out in production, sta
 - [`windmill-dashboard-nextjs-typescript`](https://github.com/roketid/windmill-dashboard-nextjs-typescript) — Next.js admin dashboard UI (263 ★)
 
 **Reach me:** [mokh.rofiudin@gmail.com](mailto:mokh.rofiudin@gmail.com) · [LinkedIn](https://www.linkedin.com/in/mokhamadrofiudin) · [mokh.rofiudin.my.id](https://mokh.rofiudin.my.id)
+
+Full CV: [CV.md](CV.md) · [cv.pdf](cv.pdf)
