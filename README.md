@@ -16,4 +16,4 @@ No CS degree, no bootcamp — 14 years of figuring things out in production, sta
 - [`edge-proxy`](https://github.com/mrofi/edge-proxy) — a lightweight edge proxy service
 - [`windmill-dashboard-nextjs-typescript`](https://github.com/roketid/windmill-dashboard-nextjs-typescript) — Next.js admin dashboard UI (263 ★)
 
-**Reach me:** [mokh.rofiudin@gmail.com](mailto:mokh.rofiudin@gmail.com) · [LinkedIn](https://www.linkedin.com/in/mokhamadrofiudin) · [mokh.rofiudin.com](https://mokh.rofiudin.com)
+**Reach me:** [mokh.rofiudin@gmail.com](mailto:mokh.rofiudin@gmail.com) · [LinkedIn](https://www.linkedin.com/in/mokhamadrofiudin) · [mokh.rofiudin.my.id](https://mokh.rofiudin.my.id)
