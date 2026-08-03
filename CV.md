@@ -9,9 +9,11 @@ mokh.rofiudin@gmail.com · [linkedin.com/in/mokhamadrofiudin](https://www.linked
 
 ## Summary
 
+I'm a software engineer who's happiest when something ships. I care less about how elegant a design doc is than whether the thing actually runs in production, in front of real users — and I've had the chance to deliver products used by millions of customers: ride-sharing, job-matching, and e-commerce platforms serving real customers in Jakarta, and telco billing and chatbot services at Kata.ai reaching a subscriber base in the tens of millions.
+
 My career didn't follow a straight line. I started as an IT generalist at a hospital in my home town — writing small apps in Visual Basic 6, fixing hardware, teaching users to solve their own problems. No CS degree, just curiosity and whatever needed to get done. From there I moved into software consulting, then spent 7.5 years in Jakarta as a PHP backend developer, building real products for real users: a ride-sharing platform, a job-matching app with a custom matching algorithm, an e-commerce platform with cart, payments, vouchers, and referrals.
 
-In 2023 I made a deliberate pivot into DevOps and platform engineering. After years building things that run *on* infrastructure, I wanted to understand the infrastructure itself — how deployments actually work, what happens when a pod crashes at 2am, why services stop talking to each other. Now I spend my days on Kubernetes, GKE, Helm, ArgoCD, Kafka, and observability tooling, doing root-cause analysis on production incidents and hardening systems against the next one.
+In 2023 I made a deliberate pivot into DevOps and platform engineering — not away from shipping, but closer to it: owning the whole path from code to production, on-call included. Now I spend my days on Kubernetes, GKE, Helm, ArgoCD, Kafka, and observability tooling, alongside writing and deploying the Go services that run on it.
 
 14 years of figuring things out in production, across hospitals, agencies, and platform teams. Still learning, still enjoying it.
 
