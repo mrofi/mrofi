@@ -7,13 +7,8 @@ No CS degree, no bootcamp — 14 years of figuring things out in production, sta
 
 **Currently working with:** Kubernetes · GKE · Helm · ArgoCD · KEDA · Prometheus/Grafana/Loki · Kafka · RabbitMQ · Cloud SQL
 
-**Recent work:**
-- Diagnosed and fixed a production autoscaling incident with a KEDA pre-scaling strategy, then traced and resolved an unrelated RabbitMQ-driven crash loop across ~140 deployments.
-- Led a 5 Whys RCA on a P1 cluster outage spanning three independent root causes (registry deprecation, security-agent misconfig, unmanaged log growth).
-- Built and personally verified a Cloud SQL / bastion security-hardening reference implementation for a client compliance audit.
-
 **Selected projects:**
-- [`simple-golang-kv`](https://github.com/mrofi/simple-golang-kv) — a key-value store built with Echo and etcd
+- [`kv-store`](https://github.com/mrofi/kv-store) — a distributed key-value store backed by S3, with in-memory LRU caching, peer-to-peer cache warming, native versioning, and optional AES-256 encryption
 - [`bashscript-server`](https://github.com/mrofi/bashscript-server) — lightweight HTTP server for running bash scripts remotely
 - [`edge-proxy`](https://github.com/mrofi/edge-proxy) — a lightweight edge proxy service
 - [`windmill-dashboard-nextjs-typescript`](https://github.com/roketid/windmill-dashboard-nextjs-typescript) — Next.js admin dashboard UI (263 ★)
